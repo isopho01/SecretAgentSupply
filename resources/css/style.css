@@ -76,6 +76,10 @@ nav span{
   margin: 0.75rem 3rem;
 }
 
+nav .menu{
+  display: none;
+}
+
 /*Products*/
 #products{
   margin: 3rem 0;
@@ -139,7 +143,97 @@ footer{
 }
 
 footer .container{
-  height: 5rem;
+  height: 10rem;
   display: flex;
   align-items: center;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 1024px){
+  /*Media for navigation*/
+  nav span{
+    display: none;
+  }
+
+  nav .menu{
+    display: block;
+  }
+
+  /*Media for products*/
+  #products .item{
+    width: 47%;
+  }
+
+  #products .glasses.item{
+    display: none;
+  }
+
+  /*Media for information*/
+  #info .item{
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  /*Media for header*/
+  header .container{
+    height: 2.3rem;
+    justify-content: center;
+  }
+
+  header span{
+    display: none;
+  }
+
+  /*Media for banner*/
+  #banner{
+    height: 15rem;
+  }
+
+  #banner .arrival{
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  #banner .arrival p{
+    font-size: 0.77rem;
+  }
+
+  #banner .arrival h1{
+    font-size: 1rem;
+  }
+
+  /*Media for products*/
+  #products .container{
+    justify-content: space-around;
+  }
+
+  #products .item{
+    width: 90%;
+    justify-content: center;
+  }
+
+  #products .watch{
+    display: none;
+  }
+
+  /*Media for information*/
+  #info .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #info .item{
+    width: 90%;
+  }
+
+  #info p{
+    margin-bottom: 0.5rem;
+  }
+
+  /*Media for footer*/
+  footer .container{
+    justify-content: center;
+  }
 }
