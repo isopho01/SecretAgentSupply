@@ -1,0 +1,145 @@
+/*Universal*/
+html{
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/*Header*/
+header{
+  background-color: black;
+  font-size: 1rem;
+}
+
+header .container{
+  display: flex;
+  align-items: center;
+}
+
+header img{
+  height: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span{
+  margin: 0.66rem 0;
+}
+
+/*banner*/
+#banner{
+  height: 25rem;
+  background-image: url("../images/moto.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#banner .container{
+  display: flex;
+}
+
+.arrival{
+  width: 20rem;
+  background-color: black;
+  padding: 2rem 3rem;
+  margin-top: 9rem;
+  line-height: normal;
+}
+
+.arrival p{
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.arrival h1{
+  font-size: 2rem;
+}
+
+/*Navigation*/
+nav{
+  background-color: firebrick;
+}
+
+nav .container{
+  display: flex;
+  justify-content: center;
+}
+
+nav span{
+  margin: 0.75rem 3rem;
+}
+
+/*Products*/
+#products{
+  margin: 3rem 0;
+}
+
+#products .container{
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+#products .item{
+  width: 30%;
+  border: 4px solid black;
+}
+
+#products .item p{
+  background-color: black;
+  padding: 0.5rem 0;
+}
+
+#products .item img{
+  height: 9rem;
+  max-width: 9rem;
+  margin: 2rem 0;
+}
+
+#products .item .glasses{
+  height: 5rem;
+  margin: 4rem 0;
+}
+
+/*Information*/
+#info{
+  margin-bottom: 4rem;
+}
+
+#info .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#info .item{
+  width: 35%;
+}
+
+#info h1{
+  background-color: black;
+  padding: 1rem 2rem;
+  margin-bottom: 0.25rem;
+}
+
+#info p{
+  color: black;
+  font-weight: normal;
+}
+
+/*Footer*/
+footer{
+  background-color: black;
+}
+
+footer .container{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+}
